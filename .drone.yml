@@ -1,0 +1,9 @@
+pipeline:
+  build:
+    when: 
+      branch: master
+      event: push
+    image: plugins/docker
+    settings:
+      repo: pravinit2/drone-test:tagname
+      tags: latest
