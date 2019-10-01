@@ -5,6 +5,6 @@ pipeline:
       event: push
     image: plugins/docker
     settings:
-      repo: pravinit2/drone-test:tagname
+      repo: pravinit2/drone-test
       tag: 
         - "build${DRONE_COMMIT:0:8}"
