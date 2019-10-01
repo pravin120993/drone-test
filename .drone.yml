@@ -7,5 +7,4 @@ pipeline:
     dockerfile: Dockerfile
     settings:
       repo: pravinit2/drone-test
-      tags: 
-        - "build${DRONE_COMMIT:0:8}"
+      auto_tag: true
