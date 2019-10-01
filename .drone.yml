@@ -5,7 +5,5 @@ pipeline:
       event: push
     image: plugins/docker
     dockerfile: Dockerfile
-    settings:
-      repo: pravinit2/drone-test
-      auto_tag: true
-      auto_tag_suffix: drone
+    repo: pravinit2/drone-test
+    tags: [ "${DRONE_COMMIT_SHA:0:7}" ]
